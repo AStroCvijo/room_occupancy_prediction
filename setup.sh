@@ -16,8 +16,9 @@ source $ENV_DIR/bin/activate
 echo "Installing dependencies from requirements.txt..."
 pip install -r requirements.txt
 
-# Install PyTorch with CUDA support
-echo "Installing PyTorch, torchvision, and torchaudio..."
+# Install other dependencies
+pip install pandas
+pip install scikit-learn
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 echo "Finished environment setup."
